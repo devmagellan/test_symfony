@@ -1,0 +1,35 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+
+# Register api
+register:
+  path: /register
+  controller: App\Controller\AuthController::register
+  methods: ['POST']
+
+
+api:
+  path: /api
+  controller: App\Controller\AuthController::api
+  methods: ['POST']
+
+api_login_check:
+  path: /login
+  methods: ['POST']
+
+delete_user:
+  path: /delete_user
+  controller: App\Controller\UserController::deleteUser
+  methods: ['DELETE']
+
+update_user:
+  path: /update_user
+  controller: App\Controller\UserController::updateUser
+  methods: ['PATCH']
+
+get_user:
+  path: /get_user
+  controller: App\Controller\UserController::getUser
+  methods: ['GET']
