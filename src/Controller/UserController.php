@@ -84,7 +84,7 @@ class UserController extends AbstractController
      *
      * @return Response
      */
-    public function getUser(Request $request)
+    public function showUser(Request $request)
     {
 
         if($this->checkSelfUserOrAdmin($request)){

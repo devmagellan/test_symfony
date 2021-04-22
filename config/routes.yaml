@@ -31,5 +31,5 @@ update_user:
 
 get_user:
   path: /get_user
-  controller: App\Controller\UserController::getUser
+  controller: App\Controller\UserController::showUser
   methods: ['GET']
